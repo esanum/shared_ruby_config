@@ -1,0 +1,159 @@
+---
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - tags
+    - log/**/*
+    - bin/**/*
+    - script/**/*
+    - config/initializers/**/*
+    - db/migrate/**/*
+    - gems/*/db/migrate/*
+    - db/schema.rb
+    - gems/**/*/db/schema.rb
+    - extras/importer/**/*
+    - vendor/**/*
+    - public/**/*
+    - tmp/**/*
+    - node_modules/**/*
+    - spec/files/**/*
+  DisplayStyleGuide: true
+  # Display cop names in messages
+  DisplayCopNames: true
+  TargetRailsVersion: 4.2
+
+Rails:
+  Enabled: true
+
+Rails/TimeZone:
+  Exclude:
+    - gems/**/*
+
+# Enable and fix this when we are on Rails 5
+# Fix with: rubocop --only Rails/HttpPositionalArguments --auto-correct
+Rails/HttpPositionalArguments:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/RefuteMethods:
+  Enabled: false
+
+Style/Documentation:
+  Exclude:
+    - config/**/*
+    - app/models/task/*
+    - app/controllers/**/*
+    - app/datatables/*
+    - app/helpers/**/*
+    - app/mailers/**/*
+    - app/cells/**/*
+    - app/serializers/**/*
+    - spec/**/*
+    - test/**/*
+    - db/migrate/*
+    - gems/**/*/app/serializers/**/*
+    - gems/**/*/app/controllers/**/*
+    - gems/**/*/app/helpers/**/*
+    - gems/**/*/spec/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
+    - spec/**/*
+    - test/**/*
+    - '*.gemspec'
+    - gems/*/spec/**/*
+    - gems/*/*.gemspec
+    - '*.rake'
+    - automations/**/*.rb
+    - lib/tasks/global_data.rake
+    - lib/tasks/development.rake
+
+Metrics/ClassLength:
+  Exclude:
+    - test/**/*
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+  AllowURI: true
+  Exclude:
+    - automations/*/manifest.rb
+    - lib/tasks/global_data.rake
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - db/migrate/*
+    - automations/*/*.rb
+
+Metrics/ModuleLength:
+  Enabled: false
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - gems/*/spec/**/*
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - automations/**/*
+    - lib/tasks/global_data.rake
+
+
+Metrics/AbcSize:
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - automations/**/*
+    - lib/tasks/global_data.rake
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - automations/**/*
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - automations/**/*
+
+# Because we want our tests to be more explicit
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/views/**/*_spec.rb
+    - spec/features/**/*_spec.rb
+    - gems/**/*/spec/views/**/*_spec.rb
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 15
+  Exclude:
+    - spec/acceptance/**/*_spec.rb
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
