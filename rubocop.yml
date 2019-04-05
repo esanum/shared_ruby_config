@@ -112,6 +112,7 @@ Metrics/MethodLength:
   Exclude:
     - spec/**/*
     - test/**/*
+    - lib/tasks/**/*
     - automations/**/*
     - lib/tasks/global_data.rake
 
