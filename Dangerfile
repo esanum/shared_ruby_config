@@ -39,7 +39,8 @@ def coffee_script_added?
 end
 
 def vcr_cassettes_changed?
-  git.modified_files.any? { |file| file.include?('vcr_cassettes') }
+  git.modified_files.any? { |file| file.include?('vcr_cassettes') } ||
+    git.added_files.any? { |file| file.include?('vcr_cassettes') }
 end
 
 def short_commit_messages?
