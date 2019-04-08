@@ -102,6 +102,12 @@ Style/FrozenStringLiteralComment:
     - db/migrate/*
     - automations/*/*.rb
 
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
 Metrics/ModuleLength:
   Enabled: false
   Exclude:
