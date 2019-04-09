@@ -38,6 +38,10 @@ def coffee_script_added?
   git.added_files.any? { |file| file.end_with?('coffee') }
 end
 
+def controller_specs_added?
+  git.added_files.any? { |file| file.include?('controllers') }
+end
+
 def vcr_cassettes_changed?
   git.modified_files.any? { |file| file.include?('vcr_cassettes') } ||
     git.added_files.any? { |file| file.include?('vcr_cassettes') }
@@ -79,6 +83,9 @@ failure("'focus: true' left in specs") if focused_spec_exists?
 
 # We do not want to have new CoffeeScript files. We should prefer plain Javascript for now.
 failure('Please use Javascript over CoffeeScript') if coffee_script_added?
+
+# Controller specs are deprecated
+failure('Please use request specs over controller specs') if controller_specs_added?
 
 if big_pr?
   checks << 'Added [yard](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) documentation for new features'
