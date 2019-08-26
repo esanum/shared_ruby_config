@@ -28,5 +28,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3'
   spec.add_runtime_dependency 'danger'
   spec.add_runtime_dependency 'danger-rubocop'
-  spec.add_runtime_dependency 'danger-todoist'
 end

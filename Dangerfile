@@ -116,7 +116,4 @@ message(":eyes: You don't have to review the vcr_cassettes changes.") if vcr_cas
 
 markdown(message_table(checks))
 
-todoist.message = "New code should not contain TODO or FIXME. Please create a ticket instead."
-todoist.fail_for_todos
-todoist.print_todos_table
 rubocop.lint(force_exclusion: true, report_danger: true)
