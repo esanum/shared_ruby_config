@@ -84,7 +84,7 @@ Layout/AlignParameters:
 Layout/MultilineOperationIndentation:
   Enabled: false
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 
 Naming/MemoizedInstanceVariableName:
