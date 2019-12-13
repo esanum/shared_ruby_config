@@ -79,13 +79,13 @@ Metrics/ClassLength:
   Exclude:
     - test/**/*
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Layout/MultilineOperationIndentation:
   Enabled: false
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Naming/MemoizedInstanceVariableName:
