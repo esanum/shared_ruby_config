@@ -23,7 +23,7 @@ AllCops:
   DisplayStyleGuide: true
   # Display cop names in messages
   DisplayCopNames: true
-  TargetRailsVersion: 4.2
+  TargetRailsVersion: 5.0
 
 Rails:
   Enabled: true
