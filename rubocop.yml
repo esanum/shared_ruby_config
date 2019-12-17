@@ -162,6 +162,7 @@ RSpec/ExampleLength:
   Max: 15
   Exclude:
     - spec/acceptance/**/*_spec.rb
+    - spec/features/**/*_spec.rb
 
 RSpec/NestedGroups:
   Max: 5
