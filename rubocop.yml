@@ -89,7 +89,7 @@ Layout/FirstHashElementIndentation:
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
   AllowURI: true
   Exclude:
