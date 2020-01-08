@@ -147,9 +147,14 @@ RSpec/DescribeClass:
   Exclude:
     - spec/requests/**/*_spec.rb
     - gems/**/*/spec/requests/**/*_spec.rb
-    - spec/views/**/*_spec.rb
+
     - spec/features/**/*_spec.rb
+    - gems/**/*/spec/features/**/*_spec.rb
+
     - spec/system/**/*_spec.rb
+    - gems/**/*/spec/system/**/*_spec.rb
+
+    - spec/views/**/*_spec.rb
     - gems/**/*/spec/views/**/*_spec.rb
 
 RSpec/MultipleExpectations:
