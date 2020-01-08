@@ -146,6 +146,7 @@ RSpec/DescribedClass:
 RSpec/DescribeClass:
   Exclude:
     - spec/requests/**/*_spec.rb
+    - gems/**/*/spec/requests/**/*_spec.rb
     - spec/views/**/*_spec.rb
     - spec/features/**/*_spec.rb
     - spec/system/**/*_spec.rb
