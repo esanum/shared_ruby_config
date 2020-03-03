@@ -17,6 +17,7 @@ AllCops:
     - gems/**/*/db/schema.rb
     - extras/importer/**/*
     - vendor/**/*
+    - gems/**/vendor/**/*
     - public/**/*
     - tmp/**/*
     - node_modules/**/*
