@@ -43,6 +43,23 @@ Rails/SkipsModelValidations:
 Rails/RefuteMethods:
   Enabled: false
 
+# Disabled because of the mentioned possibility of false positives:
+# https://docs.rubocop.org/rubocop/0.85/cops_style.html#stylehasheachmethods
+Style/HashEachMethods:
+  Enabled: false
+
+# Disabled because of the mentioned possibility of false positives:
+# https://docs.rubocop.org/rubocop/0.85/cops_style.html#stylehashtransformkeys
+Style/HashTransformKeys:
+  Enabled: false
+
+# Disabled because of the mentioned possibility of false positives:
+# https://docs.rubocop.org/rubocop/0.85/cops_style.html#stylehashtransformvalues
+Style/HashTransformValues:
+  Enabled: false
+
+# We try to focus documentation on our library(ish) classes instead of
+# documenting framework glue code.
 Style/Documentation:
   Exclude:
     - config/**/*
