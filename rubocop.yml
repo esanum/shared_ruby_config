@@ -193,3 +193,11 @@ RSpec/NestedGroups:
 
 RSpec/MessageSpies:
   EnforcedStyle: receive
+
+# This lint was crashing on some files.
+RSpec/FactoryBot/CreateList:
+  Enabled: false
+
+# This lint was crashing on some files.
+RSpec/Rails/HttpStatus:
+  Enabled: false
