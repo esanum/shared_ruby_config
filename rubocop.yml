@@ -201,3 +201,19 @@ RSpec/FactoryBot/CreateList:
 # This lint was crashing on some files.
 RSpec/Rails/HttpStatus:
   Enabled: false
+
+# For sorbet, we need to accessors separated
+Style/AccessorGrouping:
+  Enabled: false
+
+# For sorbet, we need to accessors separated
+Style/BisectedAttrAccessor:
+  Enabled: false
+
+# Formats incorrectly...
+Layout/RescueEnsureAlignment:
+  Enabled: false
+
+# Formats incorrectly...
+Layout/BeginEndAlignment:
+  Enabled: false
