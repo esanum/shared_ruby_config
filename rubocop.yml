@@ -181,8 +181,11 @@ RSpec/MultipleExpectations:
 RSpec/AnyInstance:
   Enabled: false
 
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 RSpec/ExampleLength:
-  Max: 15
+  Max: 20
   Exclude:
     - spec/acceptance/**/*_spec.rb
     - spec/features/**/*_spec.rb
