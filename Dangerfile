@@ -39,7 +39,7 @@ def coffee_script_added?
 end
 
 def controller_specs_added?
-  git.added_files.any? { |file| file.include?('controllers') }
+  git.added_files.any? { |file| file.include?('controllers') && file.end_with?('.rb') }
 end
 
 def vcr_cassettes_changed?
