@@ -184,6 +184,9 @@ RSpec/AnyInstance:
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 
+RSpec/StubbedMock:
+  Enabled: false
+
 RSpec/ExampleLength:
   Max: 20
   Exclude:
