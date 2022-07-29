@@ -43,6 +43,11 @@ Rails/SkipsModelValidations:
 Rails/RefuteMethods:
   Enabled: false
 
+# We have tasks that don't depend on the Rails environment.
+# Not depending on it makes the tasks faster.
+Rails/RakeEnvironment:
+  Enabled: false
+
 # Disabled because of the mentioned possibility of false positives:
 # https://docs.rubocop.org/rubocop/0.85/cops_style.html#stylehasheachmethods
 Style/HashEachMethods:
