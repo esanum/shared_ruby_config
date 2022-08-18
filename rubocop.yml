@@ -228,3 +228,39 @@ Layout/RescueEnsureAlignment:
 # Formats incorrectly...
 Layout/BeginEndAlignment:
   Enabled: false
+
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: false
+
+Lint/EmptyBlock:
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - gems/*/spec/**/*
+
+# Imo, this makes code harder to understand, like `unless`
+Rails/NegateInclude:
+  Enabled: false
+
+# Security isn't a concern in tests, so disable the lint there and make our
+# lives easier.
+Style/OpenStructUse:
+  Exclude:
+    - spec/**/*
+    - test/**/*
+    - gems/*/spec/**/*
+
+# I'd rather be verbose
+Style/RedundantArgument:
+  Enabled: false
+
+# This seems to make the code less readable.
+Rails/CompactBlank:
+  Enabled: false
+
+# Too many false-positives
+Rails/TimeZoneAssignment:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
