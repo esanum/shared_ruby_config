@@ -166,6 +166,9 @@ Metrics/PerceivedComplexity:
 RSpec/DescribedClass:
   EnforcedStyle: explicit
 
+RSpec/Focus:
+  AutoCorrect: false
+
 RSpec/DescribeClass:
   Exclude:
     - spec/requests/**/*_spec.rb
